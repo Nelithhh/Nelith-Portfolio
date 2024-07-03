@@ -10,7 +10,7 @@ function Header() {
         <nav className="nav container">
             <a href="index.html" className="nav__logo">Smith</a>
 
-            <div className="nav__menu">
+            <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                 <ul className="nav__list grid">
 
                     <li className="nav__item">
@@ -50,10 +50,14 @@ function Header() {
                     </li>
                 </ul>
 
-                <i class="uil uil-times nav__close"></i>
+                <i onClick={() => {
+                    showMenu(!Toggle);
+                }} class="uil uil-times nav__close"></i>
             </div>
 
-            <div className="nav__toggle">
+            <div onClick={() => {
+                showMenu(!Toggle);
+            }} className="nav__toggle">
                 <i class="uil uil-apps"></i>
             </div>
         </nav>
