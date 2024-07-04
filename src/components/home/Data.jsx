@@ -4,7 +4,7 @@ function Data() {
   return (
     <div className="home__data">
         <h1 className="home__title">
-            John Smith
+            I'M NELITH
             <svg
                     width="36"
                     height="36"
@@ -55,8 +55,8 @@ function Data() {
                     ></path>
             </svg>
         </h1>
-        <h3 className="home__subtitle">Visual Designer</h3>
-        <p className="home__description">I'm creative designer based in New York and I'm very passionate and dedicated to my work.</p>
+        <h3 className="home__subtitle">Software Engineer</h3>
+        <p className="home__description">I'm a software engineering undergraduate based in Sri Lanka who is very passionate and dedicated to my work.</p>
 
         <a href="#contact" className="button button--flex">
             Say Hello
