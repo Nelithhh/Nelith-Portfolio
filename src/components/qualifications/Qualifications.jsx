@@ -1,6 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
+import './Qualifications.css';
 
 function Qualifications() {
+  const [toggleState, setToggleState] = useState(0);
+
+  const toggleTab = (index) => {
+    setToggleState(index);
+  }
+
+
   return (
     <section className="qualification section">
         <h2 className="section__title">Qualifications</h2>
