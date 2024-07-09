@@ -36,7 +36,7 @@ function Qualifications() {
                     Experience
                 </div>
             </div>
-
+            
         <div className="qualification__sections">
             <div 
                 className={
@@ -70,13 +70,13 @@ function Qualifications() {
                     </div>
                     
                     <div>
-                        <h3 className="qualification__title">Ordinary/Advanced Level</h3>
+                        <h3 className="qualification__title">GCE Advanced Level</h3>
                         <span className="qualification__subtitle">
                             Royal College Colombo-07
                         </span>
                         <div className="qualification__calender">
                             <i className="uil uil-calendar-alt"></i>
-                            2010 - 2021
+                            2019 - 2021
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ function Qualifications() {
                     </div>
                     
                     <div>
-                        <h3 className="qualification__title">Preliminaty Certificate in Markeitng</h3>
+                        <h3 className="qualification__title">Preliminary Certificate in Markeitng</h3>
                         <span className="qualification__subtitle">
                             Sri Lanka Institute Marketing
                         </span>
@@ -137,7 +137,25 @@ function Qualifications() {
                     </div>
                 </div>
 
+                <div className="qualification__data">
+                    <div></div>
 
+                    <div>
+                        <span className="qualification__rounder"></span>
+                        <span className="qualification__line"></span>
+                    </div>
+                    
+                    <div>
+                        <h3 className="qualification__title">GCE Ordinary Level</h3>
+                        <span className="qualification__subtitle">
+                            Royal College Colombo-07
+                        </span>
+                        <div className="qualification__calender">
+                            <i className="uil uil-calendar-alt"></i>
+                            2010 - 2018
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div 
