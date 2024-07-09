@@ -20,7 +20,7 @@ function Qualifications() {
             </div>
 
         <div className="qualification__sections">
-            <div className="qualification__content">
+            <div className="qualification__content qualification__content-active">
                 <div className="qualification__data">
                     <div>
                         <h3 className="qualification__title">BSc Hons Software Engineering</h3>
@@ -139,9 +139,9 @@ function Qualifications() {
 
                 <div className="qualification__data">
                     <div>
-                        <h3 className="qualification__title">Web Development</h3>
+                        <h3 className="qualification__title">Web Designer</h3>
                         <span className="qualification__subtitle">
-                            University of Plymouth
+                            University of Kelaniya
                         </span>
                         <div className="qualification__calender">
                             <i className="uil uil-calendar-alt"></i>
