@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Qualifications.css';
 
 function Qualifications() {
-  const [toggleState, setToggleState] = useState(0);
+  const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -16,19 +16,33 @@ function Qualifications() {
 
         <div className="qualification__container container">
             <div className="qualification__tabs">
-                <div className="qualification__button qualification__active button--flex">
-                    <i className="uil uil-graduation-cap qualification__icon"></i>
-                    Education
+                <div 
+                    className={
+                        toggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"
+                    }
+                    onClick={() => toggleTab(1)}
+                >
+                        <i className="uil uil-graduation-cap qualification__icon"></i>
+                        Education
                 </div>
 
-                <div className="qualification__button button--flex">
+                <div 
+                    className={
+                        toggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"
+                    }
+                    onClick={() => toggleTab(2)}
+                >
                     <i className="uil uil-briefcase-alt qualification__icon"></i>
                     Experience
                 </div>
             </div>
 
         <div className="qualification__sections">
-            <div className="qualification__content qualification__content-active">
+            <div 
+                className={
+                    toggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content"
+                }
+            >
                 <div className="qualification__data">
                     <div>
                         <h3 className="qualification__title">BSc Hons Software Engineering</h3>
@@ -56,66 +70,26 @@ function Qualifications() {
                     </div>
                     
                     <div>
-                        <h3 className="qualification__title">Art Director</h3>
+                        <h3 className="qualification__title">Ordinary/Advanced Level</h3>
                         <span className="qualification__subtitle">
-                            Spain - Institute
+                            Royal College Colombo-07
                         </span>
                         <div className="qualification__calender">
                             <i className="uil uil-calendar-alt"></i>
-                            2021 - Present
+                            2010 - 2021
                         </div>
                     </div>
                 </div>
 
                 <div className="qualification__data">
                     <div>
-                        <h3 className="qualification__title">Web Development</h3>
+                        <h3 className="qualification__title">Certificate in Professional Digital Marketing</h3>
                         <span className="qualification__subtitle">
-                            University of Plymouth
+                            Charted Institute of Marketing
                         </span>
                         <div className="qualification__calender">
                             <i className="uil uil-calendar-alt"></i>
-                            2021 - Present
-                        </div>
-                    </div>
-
-                    <div>
-                        <span className="qualification__rounder"></span>
-                        <span className="qualification__line"></span>
-                    </div>
-                </div>
-
-                <div className="qualification__data">
-                    <div></div>
-
-                    <div>
-                        <span className="qualification__rounder"></span>
-                        <span className="qualification__line"></span>
-                    </div>
-                    
-                    <div>
-                        <h3 className="qualification__title">UX Expert</h3>
-                        <span className="qualification__subtitle">
-                            Spain - Institute
-                        </span>
-                        <div className="qualification__calender">
-                            <i className="uil uil-calendar-alt"></i>
-                            2021 - Present
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="qualification__content">
-                <div className="qualification__data">
-                    <div>
-                        <h3 className="qualification__title">Product Designer</h3>
-                        <span className="qualification__subtitle">
-                            Micrasoft institute
-                        </span>
-                        <div className="qualification__calender">
-                            <i className="uil uil-calendar-alt"></i>
-                            2021 - Present
+                            2020 - 2020
                         </div>
                     </div>
 
@@ -134,32 +108,78 @@ function Qualifications() {
                     </div>
                     
                     <div>
-                        <h3 className="qualification__title">UX designer</h3>
+                        <h3 className="qualification__title">Preliminaty Certificate in Markeitng</h3>
                         <span className="qualification__subtitle">
-                            Apple - Spain
+                            Sri Lanka Institute Marketing
                         </span>
                         <div className="qualification__calender">
                             <i className="uil uil-calendar-alt"></i>
-                            2021 - Present
+                            2019 - 2019
                         </div>
                     </div>
                 </div>
 
                 <div className="qualification__data">
                     <div>
-                        <h3 className="qualification__title">Web Designer</h3>
+                        <h3 className="qualification__title">Certificate in Web Design</h3>
                         <span className="qualification__subtitle">
                             University of Kelaniya
                         </span>
                         <div className="qualification__calender">
                             <i className="uil uil-calendar-alt"></i>
-                            2021 - Present
+                            2018 - 2019
                         </div>
                     </div>
 
                     <div>
                         <span className="qualification__rounder"></span>
                         <span className="qualification__line"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div 
+                className={
+                    toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"
+                }
+            >
+                <div className="qualification__data">
+                    <div>
+                        <h3 className="qualification__title">Intern Business Analyst</h3>
+                        <span className="qualification__subtitle">
+                            MAS Holdings
+                        </span>
+                        <div className="qualification__calender">
+                            <i className="uil uil-calendar-alt"></i>
+                            2024 - Present
+                        </div>
+                    </div>
+
+                    <div>
+                        <span className="qualification__rounder"></span>
+                        <span className="qualification__line"></span>
+                    </div>
+                </div>
+
+                <div className="qualification__data">
+                    <div></div>
+
+                    <div>
+                        <span className="qualification__rounder"></span>
+                        <span className="qualification__line"></span>
+                    </div>
+                    
+                    <div>
+                        <h3 className="qualification__title">Chief Organizer</h3>
+                        <span className="qualification__subtitle">
+                            Royal College Buddhist Brotherhood
+                        </span>
+                        <div className="qualification__calender">
+                            <i className="uil uil-calendar-alt"></i>
+                            2019 - 2020
+                        </div>
                     </div>
                 </div>
             </div>
