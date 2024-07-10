@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Contact.css';
 
 function Contact() {
   return (
@@ -73,7 +74,7 @@ function Contact() {
                         />
                     </div>
 
-                    <div className="contact__form-div">
+                    <div className="contact__form-div contact__form-area">
                         <label className="contact__form-tag">Message</label>
                         <textarea name='message' cols='30' rows='10' className='contact__form-input' placeholder='What is your message'/>
                     </div>
