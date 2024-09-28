@@ -165,7 +165,7 @@ function Qualifications() {
             >
                 <div className="qualification__data">
                     <div>
-                        <h3 className="qualification__title">Intern Business Analyst</h3>
+                        <h3 className="qualification__title">Intern IT</h3>
                         <span className="qualification__subtitle">
                             MAS Holdings
                         </span>
